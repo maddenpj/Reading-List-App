@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(:version => 20120905030012) do
 
   create_table "lists", :force => true do |t|
-    t.string   "name"
-    t.text   "descrip"
-    t.string   "image"
+    t.text     "name"
+    t.text     "descrip"
+    t.text     "image"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
