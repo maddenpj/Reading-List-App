@@ -7,5 +7,6 @@ class CreateLists < ActiveRecord::Migration
 
       t.timestamps
     end
+	change_column :list, :descrip, :text
   end
 end
