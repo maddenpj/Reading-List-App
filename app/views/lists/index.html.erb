@@ -1,0 +1,20 @@
+<%- model_class = List -%>
+<div class="page-header">
+	<h1>My Reading List</h1>
+</div>
+<div class="content-list">
+	<% @lists.each do |list| %>
+		<div class="row">
+			<div class="span6 offset2">
+				<div class="item"><center>
+        			<h4><%= list.name %></h4>
+					<img src="<%= list.image %>" width="180" height="236" />
+					<p><%= list.descrip %></p>
+				</center></div>
+			</div>
+		</div>
+    <% end %>
+</div>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_list_path,
+            :class => 'btn btn-primary' %>
